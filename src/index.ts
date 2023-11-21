@@ -61,7 +61,8 @@ const getServices = (services: Services) => {
 };
 
 export default function (services: Services) {
-  const resolverParam = { services: createServices(getServices(services)) };
+  const servicesData = createServices(getServices(services));
+  const resolverParam = { services: servicesData };
 
   return { resolverParam, name: pluginName };
 }
