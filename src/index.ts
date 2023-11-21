@@ -24,8 +24,10 @@ const createServices = (s: null | ServiceItem[]) => {
         input,
       }),
     });
+
     return res.json();
   };
+
   return s.reduce(
     (prev, current) => ({
       ...prev,
