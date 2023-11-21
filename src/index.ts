@@ -47,6 +47,7 @@ const getServices = (services: Services) => {
   if (!services) {
     return null;
   }
+
   const servicesData = Object.entries(services).reduce(
     (prev, current: [string, any]) =>
       prev.concat({
