@@ -103,9 +103,11 @@ export default function ({ services, options }: PluginOptions) {
 
   const resolverParam = { services: servicesData };
 
+  const context = options?.disableAuth ? null : applyContext(services);
+
   return {
     resolverParam,
     name: pluginName,
-    context: options?.disableAuth ? null : applyContext(services),
+    context,
   };
 }
