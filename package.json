@@ -1,6 +1,6 @@
 {
   "name": "@mavvy/minigql-plugin-miniserver",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "description": "",
   "main": "dist/index.js",
