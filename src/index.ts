@@ -21,14 +21,14 @@ export const fetcher = async (
   input: any,
   headers?: any,
 ) => {
-  const res = await fetch(`${url}/service`, {
+  const res = await fetch(`${url}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       ...(headers || {}),
     },
     body: JSON.stringify({
-      serviceMethod: name,
+      handler: name,
       input,
     }),
   });
