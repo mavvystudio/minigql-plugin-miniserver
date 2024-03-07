@@ -14,10 +14,13 @@ import miniserverPlugin from '@mavvy/minigql-plugin-miniserver';
 
 export default [
   miniserverPlugin({
-    product: {
-      url: 'http://localhost:3001',
-      methods: ['products', 'productById', 'addProduct'],
+    services: {
+      product: {
+        url: 'http://localhost:3001/api',
+        methods: ['products', 'productById', 'addProduct'],
+      },
     },
+    options: {}
   }),
 ];
 ```
