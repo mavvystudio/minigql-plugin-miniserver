@@ -21,7 +21,6 @@ export const fetcher = async (
   input: any,
   headers?: any,
 ) => {
-  console.log({ name, url, input, headers });
   const res = await fetch(url, {
     method: 'POST',
     headers: {
